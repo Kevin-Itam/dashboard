@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/script.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="nav-top">
+            <div>
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="div-nav">
+                <nav class="full">
+                    <a class="men" href="menu.php">Home</a>
+                    <a class="men" href="logout.php">Sair </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="forum_menu">
+        <ul>
+            <li class="list active"> 
+                    <a href="menu.html" >
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="titulo">Home</span>
+                    </a>                
+            </li>
+            <li class="list">
+                <a href="cad_cliente.html">
+                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon>
+                    </span>
+                    <span class="titulo">Clintes</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="cad_funcionario.html">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="titulo">Funcionario</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="cad_os.html">
+                    <span class="icon"><ion-icon name="bar-chart-outline"></ion-icon></span>
+                    <span class="titulo">Trabalhos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="historico.html" target="_self">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="titulo">Historicos</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
 </body>
+<script>
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item) =>
+    item.addEventListener('click', activeLink));
+</script>
 </html>
