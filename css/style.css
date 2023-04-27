@@ -45,17 +45,15 @@ nav {
     left: 0;
     height: 100%;
     position: absolute;
-    background: rgb(73, 73, 73);
-    width: 6vw;
-    box-shadow: 10px 0 0 rgb(127, 219, 255);
-    border-left: 10px solid rgb(73, 73, 73);
+    background-color: #1b2c3f;
+    width: 16vw;
     overflow-x: hidden;
     transition: 0.5s;
 }
 
-.forum_menu:hover {
+/*.forum_menu:hover {
     width: 200px;
-}
+}*/
 
 .forum_menu ul {
     position: absolute;
@@ -105,7 +103,7 @@ nav {
     line-height: 60px;
     white-space: nowrap;
 }
-
+/*
 .forum_menu ul li.active {
     background-color: rgb(127, 219, 255);
 }
@@ -132,7 +130,7 @@ nav {
     background: rgb(73, 73, 73);
     border-radius: 50%;
     box-shadow: 15px -15px 0 rgb(127, 219, 255);
-}
+}*/
 
 /*============= titulo-Dashboard ==============*/
 
