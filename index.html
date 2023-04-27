@@ -38,46 +38,11 @@
             <li class="list active"> 
                     <a href="menu.html" >
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="titulo">Home</span>
+                        <span class="titulo">Dashboard</span>
                     </a>                
-            </li>
-            <li class="list">
-                <a href="cad_cliente.html">
-                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon>
-                    </span>
-                    <span class="titulo">Clintes</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="cad_funcionario.html">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <span class="titulo">Funcionario</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="cad_os.html">
-                    <span class="icon"><ion-icon name="bar-chart-outline"></ion-icon></span>
-                    <span class="titulo">Trabalhos</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="historico.html" target="_self">
-                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                    <span class="titulo">Historicos</span>
-                </a>
-            </li>
-            
+            </li>            
         </ul>
     </div>
 </body>
-<script>
-    const list = document.querySelectorAll('.list');
-    function activeLink(){
-        list.forEach((item) =>
-        item.classList.remove('active'));
-        this.classList.add('active');
-    }
-    list.forEach((item) =>
-    item.addEventListener('click', activeLink));
-</script>
+
 </html>
