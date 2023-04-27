@@ -40,9 +40,46 @@
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="titulo">Dashboard</span>
                     </a>                
-            </li>             
+            </li>            
         </ul>
     </div>
+    <div class="titulo-Dashboard">
+        <h3>Dashboard</h3>
+    </div>
+    <div class="blocquinhos">
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
+            </div>
+        </div>
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
+            </div>
+        </div>
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
+            </div>
+        </div>
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+<script>
+    const list = document.querySelectorAll('.list');
+    function activeLink() {
+        list.forEach((item) =>
+            item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+</script>
 
 </html>
