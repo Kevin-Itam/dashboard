@@ -38,10 +38,16 @@ nav {
 
 /*=============  MENU LATERAL ==============*/
 
-
 .linke {
     text-decoration-line: none;
 }
+
+body.menu-close .imgss{
+    background-image: url(/img/logo-sm.png);
+    background-repeat: no-repeat;
+    background-size: calc(15px + 15px);
+}
+
 body.menu-close .forum_menu ul li a .titulo,
 body.menu-close .pp,
 body.menu-close .titulo-menu{
@@ -51,6 +57,7 @@ body.menu-close .titulo-menu{
 body.menu-close .tabela{
     margin-left: 6em;
     transition: 0.5s;
+    width: 90vw;
 }
 
 body.menu-close .forum_menu,
@@ -69,10 +76,6 @@ body.menu-close .div-navv{
     overflow-x: hidden;
     transition: 0.5s;
 }
-
-/*.forum_menu:hover {
-    width: 200px;
-}*/
 
 .forum_menu ul {
     position: fixed;
@@ -129,7 +132,15 @@ body.menu-close .div-navv{
     margin-left: 150px;
     margin-top: 75px;
 }
-
+.tabela{
+    background-color: #fff;
+    width: 85vw;
+    position: absolute;
+    top: 45vh;
+    margin-left: 15em;
+    padding: 10px;
+    transition: 0.5s;
+}
 /*============= DASH ==============*/
 
 .dash-big .dash-small{
