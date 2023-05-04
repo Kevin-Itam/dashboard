@@ -7,24 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/script.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a1453d3f1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
+<style>
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 22px;
+        right: -8px;
+        height: 17px;
+        width: 21px;
+        border-radius: 11px;
+        background-color: #0bb197;
+    }
+
+    .fa-house {
+        position: relative;
+    }
+
+    .titulo-menu {
+        position: absolute;
+        top: -10px;
+        left: 11px;
+        font-size: 10px;
+        color: #8590a5;
+    }
+
+    .titulo {
+
+        color: #d7e4ec;
+    }
+
+    .imgss {
+        position: relative;
+        top: 15px;
+        left: 22%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/img/logo-light.png);
+        background-size: 100px;
+    }
+
+    .div-navv {
+        width: 12vw;
+        height: 100%;
+        background-color: #1b2c3f;
+        transition: 0.5s;
+    }
+
+    .div-nav2 {
+        position: relative;
+        top: 7px;
+        height: 100%;
+        width: 5vw;
+        border: none;
+        padding: 0;
+    }
+
+</style>
 
 <body>
     <header>
         <div class="nav-top">
-            <div>
-                <nav class="navbar navbar-light bg-light">
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
-            </div>
+            <nav class="div-navv">
+                <div class="imgss"></div>
+            </nav>
+            <nav class="div-nav2">
+                <div class="btn">
+                    <span onclick="menu_toogle()"><i class="fa-solid fa-bars fa-2xl"></i></span>
+                </div>
+            </nav>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </nav>
             <div class="div-nav">
                 <nav class="full">
                     <a class="men" href="menu.php">Home</a>
@@ -35,51 +104,20 @@
     </header>
     <div class="forum_menu">
         <ul>
-            <li class="list active"> 
-                    <a href="menu.html" >
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="titulo">Dashboard</span>
-                    </a>                
-            </li>            
+            <li class="list active fa-house">
+                <a href="menu.html">
+                    <span class="titulo-menu">Menu</span>
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <span class="titulo">Dashboard</span>
+                    <p>3</p>
+
+                </a>
+            </li>
         </ul>
     </div>
     <div class="titulo-Dashboard">
         <h3>Dashboard</h3>
     </div>
-    <div class="blocquinhos">
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
-            </div>
-        </div>
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
-            </div>
-        </div>
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
-            </div>
-        </div>
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
-            </div>
-        </div>
-
-    </div>
 
 </body>
-<script>
-    const list = document.querySelectorAll('.list');
-    function activeLink() {
-        list.forEach((item) =>
-            item.classList.remove('active'));
-        this.classList.add('active');
-    }
-    list.forEach((item) =>
-        item.addEventListener('click', activeLink));
-</script>
-
 </html>
