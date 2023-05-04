@@ -16,24 +16,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/script.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a1453d3f1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
+<style>
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 22px;
+        right: -8px;
+        height: 17px;
+        width: 21px;
+        border-radius: 11px;
+        background-color: #0bb197;
+    }
+
+    .fa-house {
+        position: relative;
+    }
+
+    .titulo-menu {
+        position: absolute;
+        top: -10px;
+        left: 11px;
+        font-size: 10px;
+        color: #8590a5;
+    }
+
+    .titulo {
+
+        color: #d7e4ec;
+    }
+
+    .imgss {
+        position: relative;
+        top: 15px;
+        left: 22%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/img/logo-light.png);
+        background-size: 100px;
+    }
+
+    .div-navv {
+        width: 12vw;
+        height: 100%;
+        background-color: #1b2c3f;
+        transition: 0.5s;
+    }
+
+    .div-nav2 {
+        position: relative;
+        top: 7px;
+        height: 100%;
+        width: 5vw;
+        border: none;
+        padding: 0;
+    }
+
+</style>
 
 <body>
     <header>
         <div class="nav-top">
-            <div>
-                <nav class="navbar navbar-light bg-light">
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
-            </div>
+            <nav class="div-navv">
+                <div class="imgss"></div>
+            </nav>
+            <nav class="div-nav2">
+                <div class="btn">
+                    <span onclick="menu_toogle()"><i class="fa-solid fa-bars fa-2xl"></i></span>
+                </div>
+            </nav>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </nav>
             <div class="div-nav">
                 <nav class="full">
                     <a class="men" href="menu.php">Home</a>
@@ -44,252 +113,40 @@
     </header>
     <div class="forum_menu">
         <ul>
-            <li class="list active">
-                <a href="menu.html">
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <span class="titulo">Dashboard</span>
-                </a>
-            </li>
+            <li class="list active"> 
+                    <a href="menu.html" >
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="titulo">Dashboard</span>
+                    </a>                
+            </li>            
         </ul>
     </div>
-    <div class="mexer-dashboard">
-        <div class="titulo-Dashboard">
-            <h4 class="mb-sm-0">Dashboard</h4>
-        </div>
-
-        <div class="distanc">
-            <div class="dash-big dash-small">
-                <div class="dash-small">
-                    <a>X</a>
-                </div>
+    <div class="titulo-Dashboard">
+        <h3>Dashboard</h3>
+    </div>
+    <div class="blocquinhos">
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
             </div>
         </div>
-        <div class="distanc">
-            <div class="dash-big dash-small">
-                <div class="dash-small">
-                    <a>X</a>
-                </div>
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
             </div>
         </div>
-        <div class="distanc">
-            <div class="dash-big dash-small">
-                <div class="dash-small">
-                    <a>X</a>
-                </div>
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
             </div>
         </div>
-        <div class="distanc">
-            <div class="dash-big dash-small">
-                <div class="dash-small">
-                    <a>X</a>
-                </div>
+        <div class="dash-big dash-small">
+            <div class="dash-small">
+               <a>X</a>
             </div>
         </div>
 
-
-        
-        <div class="tabela">
-            <a>Última transação</a>
-            <table class="table">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col" style="width: 50px;">
-                            <div class="form-check">
-                                <input type="checkbox" class="check-input">
-                            </div>
-                        </th>
-                        <th scope="col" style="width: 60px;"></th>
-                        <th scope="col">ID $ Name</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="col" style="width: 50px;">
-                            <div class="form-check">
-                                <input type="checkbox" class="check-input">
-                            </div>
-                        </th>
-                        <td>
-                            <img src="img/law.jpg" alt="user" class="avatar-xs rounded-circle">
-                        </td>
-                        <td>
-
-                            <p class="mb-1 font-size-12">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">#AP1234</font>
-                                </font>
-                            </p>
-                            <h5 class="font-size-15 mb-0">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">David Wiley</font>
-                                </font>
-                            </h5>
-                        </td>
-                        <td>02 Nov, 2019</td>
-                        <td>$ 1,234</td>
-                        <td>1</td>
-                        <td>$ 1,234</td>
-                        <td>
-                            <i class="mdi mdi-checkbox-blank-circle text-success me-1"></i> Confirm
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
-                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="col" style="width: 50px;">
-                            <div class="form-check">
-                                <input type="checkbox" class="check-input">
-                            </div>
-                        </th>
-                        <td>
-                            <img src="img/law.jpg" alt="user" class="avatar-xs rounded-circle">
-                        </td>
-                        <td>
-                            <p class="mb-1 font-size-12">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">#AP1235</font>
-                                </font>
-                            </p>
-                            <h5 class="font-size-15 mb-0">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Walter Jones</font>
-                                </font>
-                            </h5>
-                        </td>
-                        <td>02 Nov, 2019</td>
-                        <td>$ 1,234</td>
-                        <td>1</td>
-                        <td>$ 1,234</td>
-                        <td>
-                            <i class="mdi mdi-checkbox-blank-circle text-success me-1"></i> Confirm
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
-                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="col" style="width: 50px;">
-                            <div class="form-check">
-                                <input type="checkbox" class="check-input">
-                            </div>
-                        </th>
-                        <td>
-                            <img src="img/luffy.jpg" alt="user" class="avatar-xs rounded-circle">
-                        </td>
-                        <td>
-                            <p class="mb-1 font-size-12">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">#AP1236</font>
-                                </font>
-                            </p>
-                            <h5 class="font-size-15 mb-0">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">David Wiley</font>
-                                </font>
-                            </h5>
-                        </td>
-                        <td>02 Nov, 2019</td>
-                        <td>$ 1,234</td>
-                        <td>1</td>
-                        <td>$ 1,234</td>
-                        <td>
-                            <i class="mdi mdi-checkbox-blank-circle text-danger me-1"></i> Cancel
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
-                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="col" style="width: 50px;">
-                            <div class="form-check">
-                                <input type="checkbox" class="check-input">
-                            </div>
-                        </th>
-                        <td>
-                            <img src="img/luffy.jpg" alt="user" class="avatar-xs rounded-circle">
-                        </td>
-                        <td>
-                            <p class="mb-1 font-size-12">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">#AP1237</font>
-                                </font>
-                            </p>
-                            <h5 class="font-size-15 mb-0">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Kenneth Jackson</font>
-                                </font>
-                            </h5>
-                        </td>
-                        <td>02 Nov, 2019</td>
-                        <td>$ 1,234</td>
-                        <td>1</td>
-                        <td>$ 1,234</td>
-                        <td>
-                            <i class="mdi mdi-checkbox-blank-circle text-success me-1"></i> Confirm
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
-                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="col" style="width: 50px;">
-                            <div class="form-check">
-                                <input type="checkbox" class="check-input">
-                            </div>
-                        </th>
-                        <td>
-                            <img src="img/law.jpg" alt="user" class="avatar-xs rounded-circle">
-                        </td>
-                        <td>
-                            <p class="mb-1 font-size-12">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">#AP1238</font>
-                                </font>
-                            </p>
-                            <h5 class="font-size-15 mb-0">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Ronnie Spiller</font>
-                                </font>
-                            </h5>
-                        </td>
-                        <td>02 Nov, 2019</td>
-                        <td>$ 1,234</td>
-                        <td>1</td>
-                        <td>$ 1,234</td>
-                        <td>
-                            <i class="mdi mdi-checkbox-blank-circle text-warning me-1"></i> Pending
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
-                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
     </div>
 
 </body>
-<script>
-    const list = document.querySelectorAll('.list');
-    function activeLink() {
-        list.forEach((item) =>
-            item.classList.remove('active'));
-        this.classList.add('active');
-    }
-    list.forEach((item) =>
-        item.addEventListener('click', activeLink));
-</script>
-
 </html>

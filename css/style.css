@@ -1,12 +1,14 @@
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #f3f3f4!important;
+    background-color: #f3f3f4 !important;
 }
+
 /* ===============  MENU SUPERIOR  ============*/
-header{
+header {
     position: fixed;
     top: 0;
     right: 0;
@@ -16,9 +18,8 @@ header{
     background-color: #f8f9fa;
 }
 
-.nav-top{
+.nav-top {
     display: flex;
-    justify-content:space-between;
     width: 100%;
 }
 
@@ -27,17 +28,24 @@ nav {
     left: 0;
     top: 0;
 }
-.full{
+
+.full {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 16px;
 }
+
 /*=============  MENU LATERAL ==============*/
 
 
 .linke {
     text-decoration-line: none;
+}
+
+body.menu-close .forum_menu,
+body.menu-close .div-navv {
+    width: 2.8vw;
 }
 
 .forum_menu {
@@ -46,7 +54,7 @@ nav {
     height: 100%;
     position: absolute;
     background-color: #1b2c3f;
-    width: 16vw;
+    width: 12vw;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -60,7 +68,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding-left: 5px;
+    padding-left: 0;
     padding-top: 45px;
 }
 
@@ -68,8 +76,6 @@ nav {
     position: relative;
     list-style: none;
     width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 
 .forum_menu ul li a {
@@ -78,20 +84,22 @@ nav {
     width: 100%;
     text-decoration: none;
     color: #fff;
+    padding-left: 7px;
+    font-size: .92rem;
 }
 
-.forum_menu ul li a .icon {
+.forum_menu ul li a .fa-house {
     position: relative;
     display: block;
-    min-width: 60px;
-    height: 60px;
+    min-width: 40px;
+    height: 50px;
     text-align: center;
-    line-height: 70px;
+    line-height: 60px;
 }
 
-.forum_menu ul li a .icon ion-icon {
+.forum_menu ul li a .fa-house {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 1;
 }
 
@@ -101,6 +109,7 @@ nav {
     padding-left: 10px;
     height: 60px;
     line-height: 60px;
+    font-weight: 600;
     white-space: nowrap;
 }
 /*
@@ -132,43 +141,29 @@ nav {
     box-shadow: 15px -15px 0 rgb(127, 219, 255);
 }*/
 
-/*============= div dash ==============*/
-
-.mexer-dashboard{
-    padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
-    width: 1500px;
-    height: 500px;
-    margin-left: 250px;
-}
-
-/*============= titulo ==============*/
+/*============= titulo-Dashboard ==============*/
 
 .titulo-Dashboard{
-    font-size: 10px;
-    font-weight: 600;
+    margin-left: 150px;
+    margin-top: 75px;
 }
 
+/*============= DASH ==============*/
 
-/*============= TABLE ==============*/
-
-.tabela{
-    border-radius: 5px;
+.dash-big .dash-small{
+    border: 20px solid black;
+    border-radius: 0.4rem;
+    width: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.blocquinhos{
+    width: 50%;
     position: relative;
-    background-color: white!important;
-    width: 1500px;
-    height: 500px;
-    padding: 50px;
-}
-
-.form-check{
-    margin-right: 2px;
-}
-
-.avatar-xs {
-    height: 2rem;
-    width: 2rem;
-}
-
-.rounded-circle {
-    border-radius: 50%!important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-400%);
+    display: flex;
+    flex-direction: row;
 }
