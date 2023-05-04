@@ -132,29 +132,43 @@ nav {
     box-shadow: 15px -15px 0 rgb(127, 219, 255);
 }*/
 
-/*============= titulo-Dashboard ==============*/
+/*============= div dash ==============*/
+
+.mexer-dashboard{
+    padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
+    width: 1500px;
+    height: 500px;
+    margin-left: 250px;
+}
+
+/*============= titulo ==============*/
 
 .titulo-Dashboard{
-    margin-left: 150px;
-    margin-top: 75px;
+    font-size: 10px;
+    font-weight: 600;
 }
 
-/*============= DASH ==============*/
 
-.dash-big .dash-small{
-    border: 20px solid black;
-    border-radius: 0.4rem;
-    width: auto;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-}
-.blocquinhos{
-    width: 50%;
+/*============= TABLE ==============*/
+
+.tabela{
+    border-radius: 5px;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%,-400%);
-    display: flex;
-    flex-direction: row;
+    background-color: white!important;
+    width: 1500px;
+    height: 500px;
+    padding: 50px;
+}
+
+.form-check{
+    margin-right: 2px;
+}
+
+.avatar-xs {
+    height: 2rem;
+    width: 2rem;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
 }

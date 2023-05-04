@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,39 +44,240 @@
     </header>
     <div class="forum_menu">
         <ul>
-            <li class="list active"> 
-                    <a href="menu.html" >
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="titulo">Dashboard</span>
-                    </a>                
-            </li>            
+            <li class="list active">
+                <a href="menu.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="titulo">Dashboard</span>
+                </a>
+            </li>
         </ul>
     </div>
-    <div class="titulo-Dashboard">
-        <h3>Dashboard</h3>
-    </div>
-    <div class="blocquinhos">
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
+    <div class="mexer-dashboard">
+        <div class="titulo-Dashboard">
+            <h4 class="mb-sm-0">Dashboard</h4>
+        </div>
+
+        <div class="distanc">
+            <div class="dash-big dash-small">
+                <div class="dash-small">
+                    <a>X</a>
+                </div>
             </div>
         </div>
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
+        <div class="distanc">
+            <div class="dash-big dash-small">
+                <div class="dash-small">
+                    <a>X</a>
+                </div>
             </div>
         </div>
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
+        <div class="distanc">
+            <div class="dash-big dash-small">
+                <div class="dash-small">
+                    <a>X</a>
+                </div>
             </div>
         </div>
-        <div class="dash-big dash-small">
-            <div class="dash-small">
-               <a>X</a>
+        <div class="distanc">
+            <div class="dash-big dash-small">
+                <div class="dash-small">
+                    <a>X</a>
+                </div>
             </div>
         </div>
 
+
+        
+        <div class="tabela">
+            <a>Última transação</a>
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col" style="width: 50px;">
+                            <div class="form-check">
+                                <input type="checkbox" class="check-input">
+                            </div>
+                        </th>
+                        <th scope="col" style="width: 60px;"></th>
+                        <th scope="col">ID $ Name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col" style="width: 50px;">
+                            <div class="form-check">
+                                <input type="checkbox" class="check-input">
+                            </div>
+                        </th>
+                        <td>
+                            <img src="img/law.jpg" alt="user" class="avatar-xs rounded-circle">
+                        </td>
+                        <td>
+
+                            <p class="mb-1 font-size-12">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">#AP1234</font>
+                                </font>
+                            </p>
+                            <h5 class="font-size-15 mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">David Wiley</font>
+                                </font>
+                            </h5>
+                        </td>
+                        <td>02 Nov, 2019</td>
+                        <td>$ 1,234</td>
+                        <td>1</td>
+                        <td>$ 1,234</td>
+                        <td>
+                            <i class="mdi mdi-checkbox-blank-circle text-success me-1"></i> Confirm
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width: 50px;">
+                            <div class="form-check">
+                                <input type="checkbox" class="check-input">
+                            </div>
+                        </th>
+                        <td>
+                            <img src="img/law.jpg" alt="user" class="avatar-xs rounded-circle">
+                        </td>
+                        <td>
+                            <p class="mb-1 font-size-12">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">#AP1235</font>
+                                </font>
+                            </p>
+                            <h5 class="font-size-15 mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Walter Jones</font>
+                                </font>
+                            </h5>
+                        </td>
+                        <td>02 Nov, 2019</td>
+                        <td>$ 1,234</td>
+                        <td>1</td>
+                        <td>$ 1,234</td>
+                        <td>
+                            <i class="mdi mdi-checkbox-blank-circle text-success me-1"></i> Confirm
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width: 50px;">
+                            <div class="form-check">
+                                <input type="checkbox" class="check-input">
+                            </div>
+                        </th>
+                        <td>
+                            <img src="img/luffy.jpg" alt="user" class="avatar-xs rounded-circle">
+                        </td>
+                        <td>
+                            <p class="mb-1 font-size-12">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">#AP1236</font>
+                                </font>
+                            </p>
+                            <h5 class="font-size-15 mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">David Wiley</font>
+                                </font>
+                            </h5>
+                        </td>
+                        <td>02 Nov, 2019</td>
+                        <td>$ 1,234</td>
+                        <td>1</td>
+                        <td>$ 1,234</td>
+                        <td>
+                            <i class="mdi mdi-checkbox-blank-circle text-danger me-1"></i> Cancel
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width: 50px;">
+                            <div class="form-check">
+                                <input type="checkbox" class="check-input">
+                            </div>
+                        </th>
+                        <td>
+                            <img src="img/luffy.jpg" alt="user" class="avatar-xs rounded-circle">
+                        </td>
+                        <td>
+                            <p class="mb-1 font-size-12">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">#AP1237</font>
+                                </font>
+                            </p>
+                            <h5 class="font-size-15 mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Kenneth Jackson</font>
+                                </font>
+                            </h5>
+                        </td>
+                        <td>02 Nov, 2019</td>
+                        <td>$ 1,234</td>
+                        <td>1</td>
+                        <td>$ 1,234</td>
+                        <td>
+                            <i class="mdi mdi-checkbox-blank-circle text-success me-1"></i> Confirm
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width: 50px;">
+                            <div class="form-check">
+                                <input type="checkbox" class="check-input">
+                            </div>
+                        </th>
+                        <td>
+                            <img src="img/law.jpg" alt="user" class="avatar-xs rounded-circle">
+                        </td>
+                        <td>
+                            <p class="mb-1 font-size-12">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">#AP1238</font>
+                                </font>
+                            </p>
+                            <h5 class="font-size-15 mb-0">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ronnie Spiller</font>
+                                </font>
+                            </h5>
+                        </td>
+                        <td>02 Nov, 2019</td>
+                        <td>$ 1,234</td>
+                        <td>1</td>
+                        <td>$ 1,234</td>
+                        <td>
+                            <i class="mdi mdi-checkbox-blank-circle text-warning me-1"></i> Pending
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Cancel</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </body>
